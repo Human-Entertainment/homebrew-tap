@@ -7,5 +7,10 @@ cask 'medibang' do
   homepage 'https://medibangpaint.com'
 
   app 'MediBangPaintPro.app'
+  
+  zap trash: [
+            '~/Library/Application Support/Medibang',
+            '~/Library/Saved Application State/com.medibang.cloudalpaca.savedState',
+  ]
 end
 
